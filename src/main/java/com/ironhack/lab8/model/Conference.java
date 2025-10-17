@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "conference")
 public class Conference extends Event {
 
     @OneToMany(mappedBy = "conference", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
